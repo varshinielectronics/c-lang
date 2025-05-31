@@ -15,6 +15,7 @@ int main()
     cout << "5. power" << endl;
     cout << "6. sqroot" << endl;
     cout << "7. log(base 10)" << endl;
+    cout << "8. natural log(10)" << endl;
     cin >> choice;
 
     switch (choice)
@@ -56,6 +57,14 @@ int main()
             cout << "Error: log undefined for non-positive numbers.\n";
         else
             cout << "log(" << a << ") = " << log10(a) << endl;
+        break;
+    case 8:
+        cout << "Enter a number: ";
+        cin >> a;
+        if (a <= 0)
+            cout << "Error: ln undefined for non-positive numbers.\n";
+        else
+            cout << "ln(" << a << ") = " << log(a) << endl;
         break;
     }
     return 0;
